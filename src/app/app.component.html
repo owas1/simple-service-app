@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <app-dynamic-new-account ></app-dynamic-new-account>
+      <hr>
+      <app-dynamic-account 
+      *ngFor="let acc of accounts; let i = index"
+      [account]="acc"
+      [id]="i">
+      </app-dynamic-account>
+    </div>
+  </div>
+</div>
